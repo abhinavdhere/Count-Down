@@ -1,0 +1,2 @@
+1)"Invalid Input" message does not get destroyed even after correct value provided. Status: Unresolved
+2)When New Count is clicked upon while count running, the old frame needs to be destroyed. Status: Unresolved.

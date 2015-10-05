@@ -29,7 +29,7 @@ class Count_app(Tkinter.Tk):
 
 	def new(self):
 		self.f1=Tkinter.Frame(self)
-		self.f1.pack(anchor="w")
+		self.f1.pack(anchor="w")	
 		nameLabel=Tkinter.Label(self.f1,anchor="w",text="Name of event:  ")
 		nameLabel.pack(anchor="w",side="top",pady=10)
 		self.name=Tkinter.StringVar()	
@@ -82,11 +82,21 @@ class Count_app(Tkinter.Tk):
 		return str(res)
 
 	def save(self):
+		'''
+		Save the data pertaining to the name of event and date set so that user
+		can load this data and get the counter running easily.
+		'''
+		#To be implemented
 		pass
 
 	def load(self):
+		'''
+		Load a previously saved counter for a date and event.
+		This should contain data for some popular awaited events such as new year etc.
+		'''
+		#To be implemented
 		pass
-
+		
 	def about(self):
 		AboutText="""
 About
@@ -100,8 +110,6 @@ Written by Abhinav Dhere. This software is open sourced
 		newWin.geometry("480x240",)
 		aboutlab=Tkinter.Label(newWin,text=AboutText)
 		aboutlab.pack()
-
-# print ("You have "+str((a-b).days-1)+" days, "+str(hour)+" hours "+str(minute)+" minutes and "+str(sec)+" seconds left.")
 
 if __name__=="__main__":
 	app=Count_app(None)
